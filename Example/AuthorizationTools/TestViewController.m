@@ -1,28 +1,29 @@
-# AuthorizationTools
+//
+//  TestViewController.m
+//  AuthorizationTools_Example
+//
+//  Created by cqz on 2019/8/18.
+//  Copyright © 2019 cqzhong. All rights reserved.
+//
 
-- AuthorizationTools 
+#import "TestViewController.h"
+#import "AuthorizationTools.h"
 
-## Example
+@interface TestViewController ()
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+@end
 
-## Requirements
-* Xcode 7 or higher
-* iOS 8.0 or higher
-* ARC
+@implementation TestViewController
 
-## Installation
-
-```ruby
-pod 'AuthorizationTools'
-```
-
-```objc
-
-    /*
-    * 请求并判断相机权限
-    * 第一次请求时候使用的是系统弹窗，第二次时候需要自己写弹窗。
-    */
+#pragma mark - Life Cycle Methods
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self initSubviews];
+}
+#pragma mark - Intial Methods
+- (void)initSubviews {
+    
     __weak __typeof(self)weakSelf = self;
     [AuthorizationTools requestImagePickerAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
         
@@ -48,21 +49,7 @@ pod 'AuthorizationTools'
             [weakSelf setupAuthorizationStatus:status];
         }
     }];
-
-
-- (void)setupAuthorizationStatus:(AuthorizationStatus)status {
     
-    if (status == AuthorizationStatusAuthorized) {
-        
-        NSLog(@"已经授权");
-    } else if (status == AuthorizationStatusDenied) {
-        
-        NSLog(@"用户拒绝");
-    }
-}
-
-
-//    请求并判断相机权限
 //    [AuthorizationTools requestCameraAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
 //
 //        if (status == AuthorizationStatusAuthorized) {
@@ -74,7 +61,6 @@ pod 'AuthorizationTools'
 //        }
 //    }];
 //
-//    请求并判断录音权限
 //    [AuthorizationTools requestRecordingAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
 //
 //        if (status == AuthorizationStatusAuthorized) {
@@ -86,7 +72,6 @@ pod 'AuthorizationTools'
 //        }
 //    }];
 //
-//    请求并判断通讯录权限
 //    [AuthorizationTools requestAddressBookAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
 //
 //        if (status == AuthorizationStatusAuthorized) {
@@ -97,19 +82,33 @@ pod 'AuthorizationTools'
 //            NSLog(@"用户拒绝");
 //        }
 //    }];
+    
 
+}
+#pragma mark - Network Methods
+- (void)loadData {
+    
+}
 
-```
+#pragma mark - Target Methods
 
-#### 图片展示
-<div>
-<img src="/images/001.png" width = "414" height = "896" alt="展示图001" />
-</div>
+#pragma mark - Public Methods
 
-<div>
-<img src="/images/002.png" width = "414" height = "896" alt="展示图002" />
-</div>
+#pragma mark - Private Method
+- (void)setupAuthorizationStatus:(AuthorizationStatus)status {
+    
+    if (status == AuthorizationStatusAuthorized) {
+        
+        NSLog(@"已经授权");
+    } else if (status == AuthorizationStatusDenied) {
+        
+        NSLog(@"用户拒绝");
+    }
+}
+#pragma mark - External Delegate
 
-## License
+#pragma mark - UITableViewDelegate,UITableViewDataSource
 
-AuthorizationTools is available under the MIT license. See the LICENSE file for more info.
+#pragma mark - Setter Getter Methods
+
+@end

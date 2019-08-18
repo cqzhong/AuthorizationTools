@@ -1,0 +1,773 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05A20F3D64F470B2757B9504C850FA5F /* Pods-AuthorizationTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C0B7E82BB3F32054A394BCF011AD5525 /* Pods-AuthorizationTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D21BF3CB8D8151317A9D56F9C37D1D /* Pods-AuthorizationTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7CE676A6EFE151BAC52CCE39EA9966 /* Pods-AuthorizationTools_Example-dummy.m */; };
+		158EADA888BE317D69CA06D05421750F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2410FF56FCD7C27C3D0594C1DAD0E17A /* Pods-AuthorizationTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFD22DC35A13EE142E6FEA93681FCF /* Pods-AuthorizationTools_Tests-dummy.m */; };
+		2D593B8AB4292C8EA4B3B4AAFE882358 /* Pods-AuthorizationTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38F640E886CB6479BCD2AC24BEC0372D /* Pods-AuthorizationTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A9F9B3266F88CC9AEFE6D35FE2B3657 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		76E3F08962115D12B5F855814DE4DD86 /* AuthorizationTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A4FFEA33E73A146AA4D73A026CCF9C /* AuthorizationTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABDB82A46D0564AE51CFB261B3F5724B /* AuthorizationTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 895F8AD1DD5915129514BBE7A0BF758B /* AuthorizationTools-dummy.m */; };
+		B24D466062BE3A05EC2EDEF8835E079A /* AuthorizationTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF432CECCD6DD7A83222C1BD50668143 /* AuthorizationTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D495D94C8E30F7BA2B35511F933C47ED /* AuthorizationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 313393A6F3D3678693D468E5A585CA2C /* AuthorizationTools.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FA4C0F7DE7D1347EB05B58451D1E921F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3803D7D51DB9CB64A06A7736206DCCF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143B31B86BE652E26E80C0222AD3DBED;
+			remoteInfo = "Pods-AuthorizationTools_Example";
+		};
+		B940AB193D79C9CCA8E4250A88277C35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDFAC0F7C9E8574261E573EFEF64329A;
+			remoteInfo = AuthorizationTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026ADEDD5CE95DBAD5A1F6B7DCA01DDE /* Pods-AuthorizationTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthorizationTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		07FC8C2031054C552EEE222FE448C32D /* Pods_AuthorizationTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AuthorizationTools_Example.framework; path = "Pods-AuthorizationTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		086ABBC70897E6952E312BD9233F415D /* AuthorizationTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AuthorizationTools.xcconfig; sourceTree = "<group>"; };
+		15CFD22DC35A13EE142E6FEA93681FCF /* Pods-AuthorizationTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AuthorizationTools_Tests-dummy.m"; sourceTree = "<group>"; };
+		19FC1A3D2E45624BDCCCF5E88CBA6AE4 /* Pods_AuthorizationTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AuthorizationTools_Tests.framework; path = "Pods-AuthorizationTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FCB2ADE584007FE87E54651D8CC30CF /* AuthorizationTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuthorizationTools-prefix.pch"; sourceTree = "<group>"; };
+		2D811F3DE70A3946A0CF8878EC7AE45B /* Pods-AuthorizationTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthorizationTools_Example.release.xcconfig"; sourceTree = "<group>"; };
+		313393A6F3D3678693D468E5A585CA2C /* AuthorizationTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AuthorizationTools.m; path = AuthorizationTools/AuthorizationTools.m; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38F640E886CB6479BCD2AC24BEC0372D /* Pods-AuthorizationTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AuthorizationTools_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4244DB1FFD32C58BF97A12EC4A3B97C3 /* Pods-AuthorizationTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AuthorizationTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5817533D27DC276F128E3F6E9FAD335F /* AuthorizationTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AuthorizationTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		59A4FFEA33E73A146AA4D73A026CCF9C /* AuthorizationTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AuthorizationTools.h; path = AuthorizationTools/AuthorizationTools.h; sourceTree = "<group>"; };
+		6D2460B3B0597C0CBD2FF6D8744CEF2A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		895F8AD1DD5915129514BBE7A0BF758B /* AuthorizationTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AuthorizationTools-dummy.m"; sourceTree = "<group>"; };
+		9D199E1D268CA090873C4EFCBFA1A925 /* AuthorizationTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AuthorizationTools-Info.plist"; sourceTree = "<group>"; };
+		9D7CE676A6EFE151BAC52CCE39EA9966 /* Pods-AuthorizationTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AuthorizationTools_Example-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A131822CFE0421B000FD0C4F04254FD7 /* Pods-AuthorizationTools_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthorizationTools_Tests-Info.plist"; sourceTree = "<group>"; };
+		AF432CECCD6DD7A83222C1BD50668143 /* AuthorizationTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AuthorizationTools-umbrella.h"; sourceTree = "<group>"; };
+		B45D32796E47797E9C1792F9E615FC07 /* AuthorizationTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AuthorizationTools.framework; path = AuthorizationTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA20132FE89DCBE40B6AD19EFCC131FA /* Pods-AuthorizationTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthorizationTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0B7E82BB3F32054A394BCF011AD5525 /* Pods-AuthorizationTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AuthorizationTools_Example-umbrella.h"; sourceTree = "<group>"; };
+		C0C5139A9DC588C51D3D0E4BFBF495FA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C63B327BA216E1C170061146581CB1BC /* AuthorizationTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AuthorizationTools.modulemap; sourceTree = "<group>"; };
+		CE8DC9BE3C8F0957513AE4497F9420D2 /* Pods-AuthorizationTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AuthorizationTools_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D803CDF90525C68812208F6C8DE0F7CC /* Pods-AuthorizationTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AuthorizationTools_Example.modulemap"; sourceTree = "<group>"; };
+		E213CA7AEA1861EE50CE9A204F61613B /* Pods-AuthorizationTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthorizationTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E2FFC1D92E87468B2B6CD09A171308E8 /* Pods-AuthorizationTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AuthorizationTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2C8646C210A321482886B9BE520E276 /* Pods-AuthorizationTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthorizationTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6DF1FB662BB4F93A2C78DDF1FCF717C /* Pods-AuthorizationTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AuthorizationTools_Tests.modulemap"; sourceTree = "<group>"; };
+		FA84CCFD95C9048282796DBA93B98F2B /* Pods-AuthorizationTools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AuthorizationTools_Example-Info.plist"; sourceTree = "<group>"; };
+		FD2A4554FC649F32978A7459026DFE33 /* Pods-AuthorizationTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AuthorizationTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DA1C044A36A2B527057D4E41A4B7F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9F9B3266F88CC9AEFE6D35FE2B3657 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A507C201150A052BB70D27625D6ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4C0F7DE7D1347EB05B58451D1E921F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8966CCEE820DE11B97DF24D2ADF90FBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158EADA888BE317D69CA06D05421750F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		051E2E36360DB92F33BBA9D89C18D41E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				515671FBFD689296297B252D70A13BE0 /* AuthorizationTools */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2D7B91A6C55E9F60E1FF1639F65C715F /* Pods-AuthorizationTools_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D803CDF90525C68812208F6C8DE0F7CC /* Pods-AuthorizationTools_Example.modulemap */,
+				4244DB1FFD32C58BF97A12EC4A3B97C3 /* Pods-AuthorizationTools_Example-acknowledgements.markdown */,
+				F2C8646C210A321482886B9BE520E276 /* Pods-AuthorizationTools_Example-acknowledgements.plist */,
+				9D7CE676A6EFE151BAC52CCE39EA9966 /* Pods-AuthorizationTools_Example-dummy.m */,
+				CE8DC9BE3C8F0957513AE4497F9420D2 /* Pods-AuthorizationTools_Example-frameworks.sh */,
+				FA84CCFD95C9048282796DBA93B98F2B /* Pods-AuthorizationTools_Example-Info.plist */,
+				C0B7E82BB3F32054A394BCF011AD5525 /* Pods-AuthorizationTools_Example-umbrella.h */,
+				E213CA7AEA1861EE50CE9A204F61613B /* Pods-AuthorizationTools_Example.debug.xcconfig */,
+				2D811F3DE70A3946A0CF8878EC7AE45B /* Pods-AuthorizationTools_Example.release.xcconfig */,
+			);
+			name = "Pods-AuthorizationTools_Example";
+			path = "Target Support Files/Pods-AuthorizationTools_Example";
+			sourceTree = "<group>";
+		};
+		3A841DF916FFAAE728EFB3679E14D8F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B45D32796E47797E9C1792F9E615FC07 /* AuthorizationTools.framework */,
+				07FC8C2031054C552EEE222FE448C32D /* Pods_AuthorizationTools_Example.framework */,
+				19FC1A3D2E45624BDCCCF5E88CBA6AE4 /* Pods_AuthorizationTools_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		515671FBFD689296297B252D70A13BE0 /* AuthorizationTools */ = {
+			isa = PBXGroup;
+			children = (
+				59A4FFEA33E73A146AA4D73A026CCF9C /* AuthorizationTools.h */,
+				313393A6F3D3678693D468E5A585CA2C /* AuthorizationTools.m */,
+				F7FF0A8A1948598494691BE447C0E34C /* Pod */,
+				BED44472A7362B67F9CD429FC68BD5EB /* Support Files */,
+			);
+			name = AuthorizationTools;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		5F55020CC59929C7A74776999A3FB43A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D7B91A6C55E9F60E1FF1639F65C715F /* Pods-AuthorizationTools_Example */,
+				C7C9AB5901D7C4F58B1E783D8D46F373 /* Pods-AuthorizationTools_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BED44472A7362B67F9CD429FC68BD5EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C63B327BA216E1C170061146581CB1BC /* AuthorizationTools.modulemap */,
+				086ABBC70897E6952E312BD9233F415D /* AuthorizationTools.xcconfig */,
+				895F8AD1DD5915129514BBE7A0BF758B /* AuthorizationTools-dummy.m */,
+				9D199E1D268CA090873C4EFCBFA1A925 /* AuthorizationTools-Info.plist */,
+				1FCB2ADE584007FE87E54651D8CC30CF /* AuthorizationTools-prefix.pch */,
+				AF432CECCD6DD7A83222C1BD50668143 /* AuthorizationTools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/AuthorizationTools";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C7C9AB5901D7C4F58B1E783D8D46F373 /* Pods-AuthorizationTools_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF1FB662BB4F93A2C78DDF1FCF717C /* Pods-AuthorizationTools_Tests.modulemap */,
+				E2FFC1D92E87468B2B6CD09A171308E8 /* Pods-AuthorizationTools_Tests-acknowledgements.markdown */,
+				BA20132FE89DCBE40B6AD19EFCC131FA /* Pods-AuthorizationTools_Tests-acknowledgements.plist */,
+				15CFD22DC35A13EE142E6FEA93681FCF /* Pods-AuthorizationTools_Tests-dummy.m */,
+				A131822CFE0421B000FD0C4F04254FD7 /* Pods-AuthorizationTools_Tests-Info.plist */,
+				38F640E886CB6479BCD2AC24BEC0372D /* Pods-AuthorizationTools_Tests-umbrella.h */,
+				FD2A4554FC649F32978A7459026DFE33 /* Pods-AuthorizationTools_Tests.debug.xcconfig */,
+				026ADEDD5CE95DBAD5A1F6B7DCA01DDE /* Pods-AuthorizationTools_Tests.release.xcconfig */,
+			);
+			name = "Pods-AuthorizationTools_Tests";
+			path = "Target Support Files/Pods-AuthorizationTools_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				051E2E36360DB92F33BBA9D89C18D41E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				3A841DF916FFAAE728EFB3679E14D8F1 /* Products */,
+				5F55020CC59929C7A74776999A3FB43A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7FF0A8A1948598494691BE447C0E34C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				5817533D27DC276F128E3F6E9FAD335F /* AuthorizationTools.podspec */,
+				C0C5139A9DC588C51D3D0E4BFBF495FA /* LICENSE */,
+				6D2460B3B0597C0CBD2FF6D8744CEF2A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		02513CFD290FEDC2DC67591210927235 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05A20F3D64F470B2757B9504C850FA5F /* Pods-AuthorizationTools_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8849F40C8242F3466E2B998990646B54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24D466062BE3A05EC2EDEF8835E079A /* AuthorizationTools-umbrella.h in Headers */,
+				76E3F08962115D12B5F855814DE4DD86 /* AuthorizationTools.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2196A7239513C96D14470AD3E0F24EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D593B8AB4292C8EA4B3B4AAFE882358 /* Pods-AuthorizationTools_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		143B31B86BE652E26E80C0222AD3DBED /* Pods-AuthorizationTools_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061730E3AC462E2E7DA4E31DE716E8EC /* Build configuration list for PBXNativeTarget "Pods-AuthorizationTools_Example" */;
+			buildPhases = (
+				02513CFD290FEDC2DC67591210927235 /* Headers */,
+				63AA0084ED4CB0A43151B1D5CA4C37F7 /* Sources */,
+				7DA1C044A36A2B527057D4E41A4B7F04 /* Frameworks */,
+				79E3CCAFB29BA893603152AD89CBB8C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98AF27B0CF9C10095029CED1A1CA7941 /* PBXTargetDependency */,
+			);
+			name = "Pods-AuthorizationTools_Example";
+			productName = "Pods-AuthorizationTools_Example";
+			productReference = 07FC8C2031054C552EEE222FE448C32D /* Pods_AuthorizationTools_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		76BC3341EB27E856AE3C79DC9E0D0D1F /* Pods-AuthorizationTools_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41052441CEB80D7C0F00472EBBA6EA2F /* Build configuration list for PBXNativeTarget "Pods-AuthorizationTools_Tests" */;
+			buildPhases = (
+				F2196A7239513C96D14470AD3E0F24EF /* Headers */,
+				EC02F6D707C438B19705D043FA4CBD78 /* Sources */,
+				8966CCEE820DE11B97DF24D2ADF90FBF /* Frameworks */,
+				5E766B8D932FBFD97F8A29512A4F7602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D624FACA30FC7A95122274205D26320 /* PBXTargetDependency */,
+			);
+			name = "Pods-AuthorizationTools_Tests";
+			productName = "Pods-AuthorizationTools_Tests";
+			productReference = 19FC1A3D2E45624BDCCCF5E88CBA6AE4 /* Pods_AuthorizationTools_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDFAC0F7C9E8574261E573EFEF64329A /* AuthorizationTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A09ACE76C62AF33997693615F677685 /* Build configuration list for PBXNativeTarget "AuthorizationTools" */;
+			buildPhases = (
+				8849F40C8242F3466E2B998990646B54 /* Headers */,
+				E841D4850D1987B504ABD9876B675D87 /* Sources */,
+				85A507C201150A052BB70D27625D6ED0 /* Frameworks */,
+				B16EADC046E649044AA9D3A6FCF048E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AuthorizationTools;
+			productName = AuthorizationTools;
+			productReference = B45D32796E47797E9C1792F9E615FC07 /* AuthorizationTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3A841DF916FFAAE728EFB3679E14D8F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDFAC0F7C9E8574261E573EFEF64329A /* AuthorizationTools */,
+				143B31B86BE652E26E80C0222AD3DBED /* Pods-AuthorizationTools_Example */,
+				76BC3341EB27E856AE3C79DC9E0D0D1F /* Pods-AuthorizationTools_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E766B8D932FBFD97F8A29512A4F7602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E3CCAFB29BA893603152AD89CBB8C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16EADC046E649044AA9D3A6FCF048E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63AA0084ED4CB0A43151B1D5CA4C37F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D21BF3CB8D8151317A9D56F9C37D1D /* Pods-AuthorizationTools_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E841D4850D1987B504ABD9876B675D87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABDB82A46D0564AE51CFB261B3F5724B /* AuthorizationTools-dummy.m in Sources */,
+				D495D94C8E30F7BA2B35511F933C47ED /* AuthorizationTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC02F6D707C438B19705D043FA4CBD78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2410FF56FCD7C27C3D0594C1DAD0E17A /* Pods-AuthorizationTools_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D624FACA30FC7A95122274205D26320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AuthorizationTools_Example";
+			target = 143B31B86BE652E26E80C0222AD3DBED /* Pods-AuthorizationTools_Example */;
+			targetProxy = 3803D7D51DB9CB64A06A7736206DCCF0 /* PBXContainerItemProxy */;
+		};
+		98AF27B0CF9C10095029CED1A1CA7941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AuthorizationTools;
+			target = BDFAC0F7C9E8574261E573EFEF64329A /* AuthorizationTools */;
+			targetProxy = B940AB193D79C9CCA8E4250A88277C35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AAAE2093F62134C56C645C53CB481CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E213CA7AEA1861EE50CE9A204F61613B /* Pods-AuthorizationTools_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AuthorizationTools_Example/Pods-AuthorizationTools_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AuthorizationTools_Example/Pods-AuthorizationTools_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1501EADC6B0494B385DF01EDFF54E31E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 026ADEDD5CE95DBAD5A1F6B7DCA01DDE /* Pods-AuthorizationTools_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AuthorizationTools_Tests/Pods-AuthorizationTools_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AuthorizationTools_Tests/Pods-AuthorizationTools_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45B910286A466EA15A2A1C8228887B40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2A4554FC649F32978A7459026DFE33 /* Pods-AuthorizationTools_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AuthorizationTools_Tests/Pods-AuthorizationTools_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AuthorizationTools_Tests/Pods-AuthorizationTools_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6FCC6459A4A8A0D98634F658ACACF689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D811F3DE70A3946A0CF8878EC7AE45B /* Pods-AuthorizationTools_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AuthorizationTools_Example/Pods-AuthorizationTools_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AuthorizationTools_Example/Pods-AuthorizationTools_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7473461D97DF97D74F5C59B1E94D6911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086ABBC70897E6952E312BD9233F415D /* AuthorizationTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AuthorizationTools/AuthorizationTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AuthorizationTools/AuthorizationTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AuthorizationTools/AuthorizationTools.modulemap";
+				PRODUCT_MODULE_NAME = AuthorizationTools;
+				PRODUCT_NAME = AuthorizationTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		97640C7434E8465719346BCA0B106F31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 086ABBC70897E6952E312BD9233F415D /* AuthorizationTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AuthorizationTools/AuthorizationTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AuthorizationTools/AuthorizationTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AuthorizationTools/AuthorizationTools.modulemap";
+				PRODUCT_MODULE_NAME = AuthorizationTools;
+				PRODUCT_NAME = AuthorizationTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061730E3AC462E2E7DA4E31DE716E8EC /* Build configuration list for PBXNativeTarget "Pods-AuthorizationTools_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAAE2093F62134C56C645C53CB481CF /* Debug */,
+				6FCC6459A4A8A0D98634F658ACACF689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41052441CEB80D7C0F00472EBBA6EA2F /* Build configuration list for PBXNativeTarget "Pods-AuthorizationTools_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45B910286A466EA15A2A1C8228887B40 /* Debug */,
+				1501EADC6B0494B385DF01EDFF54E31E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A09ACE76C62AF33997693615F677685 /* Build configuration list for PBXNativeTarget "AuthorizationTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7473461D97DF97D74F5C59B1E94D6911 /* Debug */,
+				97640C7434E8465719346BCA0B106F31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

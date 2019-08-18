@@ -1,0 +1,6 @@
+framework module AuthorizationTools {
+  umbrella header "AuthorizationTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

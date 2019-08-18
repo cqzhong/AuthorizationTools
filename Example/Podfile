@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target 'AuthorizationTools_Example' do
+  pod 'AuthorizationTools', :path => '../'
+
+  target 'AuthorizationTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
