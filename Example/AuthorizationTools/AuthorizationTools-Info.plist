@@ -26,6 +26,8 @@
 	<true/>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>需要你的同意，来访问相册上传头像</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>日历</string>
 	<key>NSCameraUsageDescription</key>
 	<string>需要你的同意，来使用相机拍摄头像</string>
 	<key>NSContactsUsageDescription</key>
@@ -36,6 +38,10 @@
 	<string>需要你的同意，来访问相册上传头像</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>需要你的同意，来访问相册上传头像</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>提醒事项</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>语音识别权限</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

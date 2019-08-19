@@ -19,12 +19,23 @@ pod 'AuthorizationTools'
 
 ```objc
 
+typedef NS_ENUM(NSUInteger, PrivacyType){
+    PrivacyTypeNone               = 0,
+    PrivacyTypePhotos             = 1,// 照片
+    PrivacyTypeCamera             = 2,// 相机
+    PrivacyTypeMicrophone         = 3,// 麦克风
+    PrivacyTypeAddressBook        = 4,// 通讯录
+    PrivacyTypeCalendars          = 5,// 日历
+    PrivacyTypeReminders          = 6,// 提醒事项
+    PrivacyTypeSpeechRecognition  = 7,// 语音识别 >= iOS10
+};
+
     /*
     * 请求并判断相机权限
     * 第一次请求时候使用的是系统弹窗，第二次时候需要自己写弹窗。
     */
     __weak __typeof(self)weakSelf = self;
-    [AuthorizationTools requestImagePickerAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
+    [AuthorizationTools requestPrivacyType:PrivacyTypePhotos authorizationStatus:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
         
         NSLog(@"授权：%@", isFirstAuthorization ? @"是第一次授权" : @"不是第一次授权");
         
@@ -42,7 +53,7 @@ pod 'AuthorizationTools'
             [alertController addAction:setAction];
             
             [weakSelf presentViewController:alertController animated:true completion:nil];
-
+            
         } else {
             
             [weakSelf setupAuthorizationStatus:status];
@@ -62,41 +73,6 @@ pod 'AuthorizationTools'
 }
 
 
-//    请求并判断相机权限
-//    [AuthorizationTools requestCameraAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
-//
-//        if (status == AuthorizationStatusAuthorized) {
-//
-//            NSLog(@"已经授权");
-//        } else if (status == AuthorizationStatusDenied) {
-//
-//            NSLog(@"用户拒绝");
-//        }
-//    }];
-//
-//    请求并判断录音权限
-//    [AuthorizationTools requestRecordingAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
-//
-//        if (status == AuthorizationStatusAuthorized) {
-//
-//            NSLog(@"已经授权");
-//        } else if (status == AuthorizationStatusDenied) {
-//
-//            NSLog(@"用户拒绝");
-//        }
-//    }];
-//
-//    请求并判断通讯录权限
-//    [AuthorizationTools requestAddressBookAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
-//
-//        if (status == AuthorizationStatusAuthorized) {
-//
-//            NSLog(@"已经授权");
-//        } else if (status == AuthorizationStatusDenied) {
-//
-//            NSLog(@"用户拒绝");
-//        }
-//    }];
 
 
 ```

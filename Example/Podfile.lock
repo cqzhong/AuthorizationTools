@@ -1,5 +1,5 @@
 PODS:
-  - AuthorizationTools (1.0.0)
+  - AuthorizationTools (1.0.1)
 
 DEPENDENCIES:
   - AuthorizationTools (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AuthorizationTools: eb50450fc677f02812e7a903adb8aeb035bb7d19
+  AuthorizationTools: b9981854eaf3819a406ba52bd7d6dd9cd5c7e679
 
 PODFILE CHECKSUM: 48c000f441b3cf2c20522e719476c13d4242d1fe
 

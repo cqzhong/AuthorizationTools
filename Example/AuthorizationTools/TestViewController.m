@@ -25,7 +25,7 @@
 - (void)initSubviews {
     
     __weak __typeof(self)weakSelf = self;
-    [AuthorizationTools requestImagePickerAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
+    [AuthorizationTools requestPrivacyType:PrivacyTypePhotos authorizationStatus:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
         
         NSLog(@"授权：%@", isFirstAuthorization ? @"是第一次授权" : @"不是第一次授权");
         
@@ -43,47 +43,12 @@
             [alertController addAction:setAction];
             
             [weakSelf presentViewController:alertController animated:true completion:nil];
-
+            
         } else {
             
             [weakSelf setupAuthorizationStatus:status];
         }
     }];
-    
-//    [AuthorizationTools requestCameraAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
-//
-//        if (status == AuthorizationStatusAuthorized) {
-//
-//            NSLog(@"已经授权");
-//        } else if (status == AuthorizationStatusDenied) {
-//
-//            NSLog(@"用户拒绝");
-//        }
-//    }];
-//
-//    [AuthorizationTools requestRecordingAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
-//
-//        if (status == AuthorizationStatusAuthorized) {
-//
-//            NSLog(@"已经授权");
-//        } else if (status == AuthorizationStatusDenied) {
-//
-//            NSLog(@"用户拒绝");
-//        }
-//    }];
-//
-//    [AuthorizationTools requestAddressBookAuthorization:^(AuthorizationStatus status, BOOL isFirstAuthorization) {
-//
-//        if (status == AuthorizationStatusAuthorized) {
-//
-//            NSLog(@"已经授权");
-//        } else if (status == AuthorizationStatusDenied) {
-//
-//            NSLog(@"用户拒绝");
-//        }
-//    }];
-    
-
 }
 #pragma mark - Network Methods
 - (void)loadData {
